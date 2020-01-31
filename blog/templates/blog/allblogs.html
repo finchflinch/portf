@@ -1,0 +1,13 @@
+<h4>
+    this is the blog page
+</h4>
+<br>
+<br>
+{% for bg in bloggy.all %}
+
+<a href=""><h2>{{ bg.desc }}</h2></a>
+{{ bg.summ }}
+<br>
+<br>
+
+{% endfor %}
