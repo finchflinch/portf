@@ -5,7 +5,10 @@
 <br>
 {% for bg in bloggy.all %}
 
-<a href=""><h2>{{ bg.desc }}</h2></a>
+<!-- another way to refer blogid primary key in hyperlink -->
+<!-- <a href="{{ bg.id }}"><h2>{{ bg.desc }}</h2></a> -->
+<a href="{% url 'detail' bg.id %}"><h2>{{ bg.desc }}</h2></a>
+
 {{ bg.summ }}
 <br>
 <br>
